@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "EUPlaybackInfoViewController.h"
 
 @implementation AppDelegate
 
@@ -16,8 +16,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor redColor];
+    self.window.rootViewController = vc;
+    
+    EUPlaybackInfoViewController *pvc = [[EUPlaybackInfoViewController alloc] init];
+    [vc addChildViewController:pvc];
+    
+
     [self.window makeKeyAndVisible];
     return YES;
 }

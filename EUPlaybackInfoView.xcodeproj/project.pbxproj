@@ -18,6 +18,16 @@
 		5BE72047177CDEEA007696E2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE72046177CDEEA007696E2 /* Default-568h@2x.png */; };
 		5BE7204A177CDEEA007696E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE72049177CDEEA007696E2 /* ViewController.m */; };
 		5BE7204D177CDEEA007696E2 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7204B177CDEEA007696E2 /* ViewController.xib */; };
+		5BE72055177CDFD2007696E2 /* EUPlaybackInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE72054177CDFD2007696E2 /* EUPlaybackInfoViewController.m */; };
+		5BE72058177CDFF4007696E2 /* EUPlaybackInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE72057177CDFF4007696E2 /* EUPlaybackInfoView.m */; };
+		5BE72061177EB095007696E2 /* PausedPodcastButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE72059177EB094007696E2 /* PausedPodcastButton.png */; };
+		5BE72062177EB095007696E2 /* PausedPodcastButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7205A177EB095007696E2 /* PausedPodcastButton@2x.png */; };
+		5BE72063177EB095007696E2 /* PlaybackSliderLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7205B177EB095007696E2 /* PlaybackSliderLine.png */; };
+		5BE72064177EB095007696E2 /* PlaybackSliderLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7205C177EB095007696E2 /* PlaybackSliderLine@2x.png */; };
+		5BE72065177EB095007696E2 /* PlaybackSliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7205D177EB095007696E2 /* PlaybackSliderThumb.png */; };
+		5BE72066177EB095007696E2 /* PlaybackSliderThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7205E177EB095007696E2 /* PlaybackSliderThumb@2x.png */; };
+		5BE72067177EB095007696E2 /* PlayPodcastButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7205F177EB095007696E2 /* PlayPodcastButton.png */; };
+		5BE72068177EB095007696E2 /* PlayPodcastButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE72060177EB095007696E2 /* PlayPodcastButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +47,18 @@
 		5BE72048177CDEEA007696E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5BE72049177CDEEA007696E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5BE7204C177CDEEA007696E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		5BE72053177CDFD2007696E2 /* EUPlaybackInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUPlaybackInfoViewController.h; sourceTree = "<group>"; };
+		5BE72054177CDFD2007696E2 /* EUPlaybackInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUPlaybackInfoViewController.m; sourceTree = "<group>"; };
+		5BE72056177CDFF4007696E2 /* EUPlaybackInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUPlaybackInfoView.h; sourceTree = "<group>"; };
+		5BE72057177CDFF4007696E2 /* EUPlaybackInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUPlaybackInfoView.m; sourceTree = "<group>"; };
+		5BE72059177EB094007696E2 /* PausedPodcastButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PausedPodcastButton.png; sourceTree = SOURCE_ROOT; };
+		5BE7205A177EB095007696E2 /* PausedPodcastButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PausedPodcastButton@2x.png"; sourceTree = SOURCE_ROOT; };
+		5BE7205B177EB095007696E2 /* PlaybackSliderLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaybackSliderLine.png; sourceTree = SOURCE_ROOT; };
+		5BE7205C177EB095007696E2 /* PlaybackSliderLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlaybackSliderLine@2x.png"; sourceTree = SOURCE_ROOT; };
+		5BE7205D177EB095007696E2 /* PlaybackSliderThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaybackSliderThumb.png; sourceTree = SOURCE_ROOT; };
+		5BE7205E177EB095007696E2 /* PlaybackSliderThumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlaybackSliderThumb@2x.png"; sourceTree = SOURCE_ROOT; };
+		5BE7205F177EB095007696E2 /* PlayPodcastButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayPodcastButton.png; sourceTree = SOURCE_ROOT; };
+		5BE72060177EB095007696E2 /* PlayPodcastButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayPodcastButton@2x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,10 @@
 		5BE72024177CDEEA007696E2 = {
 			isa = PBXGroup;
 			children = (
+				5BE72053177CDFD2007696E2 /* EUPlaybackInfoViewController.h */,
+				5BE72054177CDFD2007696E2 /* EUPlaybackInfoViewController.m */,
+				5BE72056177CDFF4007696E2 /* EUPlaybackInfoView.h */,
+				5BE72057177CDFF4007696E2 /* EUPlaybackInfoView.m */,
 				5BE72036177CDEEA007696E2 /* EUPlaybackInfoView */,
 				5BE7202F177CDEEA007696E2 /* Frameworks */,
 				5BE7202E177CDEEA007696E2 /* Products */,
@@ -88,6 +114,14 @@
 				5BE72048177CDEEA007696E2 /* ViewController.h */,
 				5BE72049177CDEEA007696E2 /* ViewController.m */,
 				5BE7204B177CDEEA007696E2 /* ViewController.xib */,
+				5BE72059177EB094007696E2 /* PausedPodcastButton.png */,
+				5BE7205A177EB095007696E2 /* PausedPodcastButton@2x.png */,
+				5BE7205B177EB095007696E2 /* PlaybackSliderLine.png */,
+				5BE7205C177EB095007696E2 /* PlaybackSliderLine@2x.png */,
+				5BE7205D177EB095007696E2 /* PlaybackSliderThumb.png */,
+				5BE7205E177EB095007696E2 /* PlaybackSliderThumb@2x.png */,
+				5BE7205F177EB095007696E2 /* PlayPodcastButton.png */,
+				5BE72060177EB095007696E2 /* PlayPodcastButton@2x.png */,
 				5BE72037177CDEEA007696E2 /* Supporting Files */,
 			);
 			path = EUPlaybackInfoView;
@@ -163,6 +197,14 @@
 				5BE72045177CDEEA007696E2 /* Default@2x.png in Resources */,
 				5BE72047177CDEEA007696E2 /* Default-568h@2x.png in Resources */,
 				5BE7204D177CDEEA007696E2 /* ViewController.xib in Resources */,
+				5BE72061177EB095007696E2 /* PausedPodcastButton.png in Resources */,
+				5BE72062177EB095007696E2 /* PausedPodcastButton@2x.png in Resources */,
+				5BE72063177EB095007696E2 /* PlaybackSliderLine.png in Resources */,
+				5BE72064177EB095007696E2 /* PlaybackSliderLine@2x.png in Resources */,
+				5BE72065177EB095007696E2 /* PlaybackSliderThumb.png in Resources */,
+				5BE72066177EB095007696E2 /* PlaybackSliderThumb@2x.png in Resources */,
+				5BE72067177EB095007696E2 /* PlayPodcastButton.png in Resources */,
+				5BE72068177EB095007696E2 /* PlayPodcastButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +218,8 @@
 				5BE7203D177CDEEA007696E2 /* main.m in Sources */,
 				5BE72041177CDEEA007696E2 /* AppDelegate.m in Sources */,
 				5BE7204A177CDEEA007696E2 /* ViewController.m in Sources */,
+				5BE72055177CDFD2007696E2 /* EUPlaybackInfoViewController.m in Sources */,
+				5BE72058177CDFF4007696E2 /* EUPlaybackInfoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
