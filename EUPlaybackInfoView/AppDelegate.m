@@ -10,6 +10,12 @@
 
 #import "EUPlaybackInfoViewController.h"
 
+@interface AppDelegate () {
+    EUPlaybackInfoViewController *pvc;
+}
+
+@end
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -20,12 +26,24 @@
     vc.view.backgroundColor = [UIColor redColor];
     self.window.rootViewController = vc;
     
-    EUPlaybackInfoViewController *pvc = [[EUPlaybackInfoViewController alloc] init];
-    [vc addChildViewController:pvc];
+    UIButton *playButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [playButton setTitle:@"Play" forState:UIControlStateNormal];
+    [playButton addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchDown | UIControlEventTouchUpInside];
+    [playButton sizeToFit];
+    CGRect frame = playButton.frame;
     
+    [vc.view addSubview:playButton];
+    playButton.center = vc.view.center;
+    
+    pvc = [[EUPlaybackInfoViewController alloc] init];
+    [vc addChildViewController:pvc];
 
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)click:(id)sender {
+    pvc.playing = YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

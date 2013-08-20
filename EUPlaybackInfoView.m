@@ -12,31 +12,31 @@
 #define kPlayingString @"Playing"
 
 #define kViewWidth 320.0
-#define kViewHeight 56.0
+#define kViewHeight 48.0
 
 #define kPlaybackButtonLead 8.0
 #define kPlaybackButtonTop 4.0
-#define kPlaybackButtonWidth 32.0
-#define kPlaybackButtonHeight 32.0
+#define kPlaybackButtonWidth 24.0
+#define kPlaybackButtonHeight 24.0
 
-#define kPlaytimeSliderLead 48.0
-#define kPlaytimeSliderTop 20.0
-#define kPlaytimeSliderWidth 260.0
+#define kPlaytimeSliderLead 62.0
+#define kPlaytimeSliderTop 30.0
+#define kPlaytimeSliderWidth 200.0
 #define kPlaytimeSliderHeight 14.0
 
-#define kCurrentLabelLead 48.0
-#define kCurrentLabelTop 4.0
-#define kRemainingLabelLead 244.0
-#define kRemainingLabeTop 4.0
+#define kCurrentLabelLead 8.0
+#define kCurrentLabelTop 30.0
+#define kRemainingLabelLead 250.0
+#define kRemainingLabeTop 30.0
 #define kLabelWidth 64.0
 #define kLabelHeight 16.0
 
-#define kPodcastInfoLabelLead 48.0
-#define kPodcastInfoLabelTop 36.0
+#define kPodcastInfoLabelLead 40.0
+#define kPodcastInfoLabelTop 10.0
 #define kPodcastInfoLabelWidth 260.0
 #define kPodcastInfoLabelHeight 16.0
 
-#define kLabelFontName @"Helvetica-Light"
+#define kLabelFontName @"Helvetica"
 #define kLabelFontSize 12.0
 #define kLabelUIFont [UIFont fontWithName:kLabelFontName size:kLabelFontSize]
 
@@ -87,6 +87,13 @@
         self.translatesAutoresizingMaskIntoConstraints = NO;
         
         self.backgroundColor = [UIColor darkGrayColor];
+    
+        UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PlaybackBackground"]];
+        backgroundImage.contentMode = UIViewContentModeScaleToFill;
+        [self addSubview:backgroundImage];
+        [self sendSubviewToBack:backgroundImage];
+//        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view]|" options:0 metrics:nil views:@{@"view":backgroundImage}]];
+        
         playbackButton = [UIButton buttonWithType:UIButtonTypeCustom];
         
         UIImage *image = [UIImage imageNamed:@"PlayPodcastButton"];
@@ -110,7 +117,7 @@
         currentTimeLabel = [[UILabel alloc] initWithFrame:bounds];
         currentTimeLabel.text = [@"-" stringByAppendingString:[NSString timeStringFromNSTimeInterval:0]];
         currentTimeLabel.font = kLabelUIFont;
-        currentTimeLabel.backgroundColor = [UIColor darkGrayColor];
+        currentTimeLabel.backgroundColor = [UIColor clearColor];
         currentTimeLabel.textColor = [UIColor whiteColor];
         currentTimeLabel.textAlignment = NSTextAlignmentLeft;
         [self addConstraintsForSubView:currentTimeLabel bounds:bounds];
@@ -119,7 +126,7 @@
         remainingTimeLabel = [[UILabel alloc] initWithFrame:bounds];
         remainingTimeLabel.text = [NSString timeStringFromNSTimeInterval:0];
         remainingTimeLabel.font = kLabelUIFont;
-        remainingTimeLabel.backgroundColor = [UIColor darkGrayColor];
+        remainingTimeLabel.backgroundColor = [UIColor clearColor];
         remainingTimeLabel.textColor = [UIColor whiteColor];
         remainingTimeLabel.textAlignment = NSTextAlignmentRight;
         [self addConstraintsForSubView:remainingTimeLabel bounds:bounds];
@@ -128,7 +135,7 @@
         podcastInfoLabel = [[UILabel alloc] initWithFrame:bounds];
         podcastInfoLabel.text = @"Playing:";
         podcastInfoLabel.font = kLabelUIFont;
-        podcastInfoLabel.backgroundColor = [UIColor darkGrayColor];
+        podcastInfoLabel.backgroundColor = [UIColor clearColor];
         podcastInfoLabel.textColor = [UIColor whiteColor];
         podcastInfoLabel.textAlignment = NSTextAlignmentLeft;
         [self addConstraintsForSubView:podcastInfoLabel bounds:bounds];
@@ -154,6 +161,11 @@
 
 - (void)refresh {
     [self updateControls];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
 }
 
 - (void)updateControls {

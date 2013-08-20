@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B555AD617930EBA00251797 /* PlaybackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B555AD417930EBA00251797 /* PlaybackBackground.png */; };
+		5B555AD717930EBA00251797 /* PlaybackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B555AD517930EBA00251797 /* PlaybackBackground@2x.png */; };
 		5BE72031177CDEEA007696E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE72030177CDEEA007696E2 /* UIKit.framework */; };
 		5BE72033177CDEEA007696E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE72032177CDEEA007696E2 /* Foundation.framework */; };
 		5BE72035177CDEEA007696E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE72034177CDEEA007696E2 /* CoreGraphics.framework */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B555AD417930EBA00251797 /* PlaybackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaybackBackground.png; sourceTree = SOURCE_ROOT; };
+		5B555AD517930EBA00251797 /* PlaybackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlaybackBackground@2x.png"; sourceTree = SOURCE_ROOT; };
 		5BE7202D177CDEEA007696E2 /* EUPlaybackInfoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EUPlaybackInfoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE72030177CDEEA007696E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5BE72032177CDEEA007696E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B555AD817930EC600251797 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5B555AD417930EBA00251797 /* PlaybackBackground.png */,
+				5B555AD517930EBA00251797 /* PlaybackBackground@2x.png */,
+				5BE72059177EB094007696E2 /* PausedPodcastButton.png */,
+				5BE7205A177EB095007696E2 /* PausedPodcastButton@2x.png */,
+				5BE7205B177EB095007696E2 /* PlaybackSliderLine.png */,
+				5BE7205C177EB095007696E2 /* PlaybackSliderLine@2x.png */,
+				5BE7205D177EB095007696E2 /* PlaybackSliderThumb.png */,
+				5BE7205E177EB095007696E2 /* PlaybackSliderThumb@2x.png */,
+				5BE7205F177EB095007696E2 /* PlayPodcastButton.png */,
+				5BE72060177EB095007696E2 /* PlayPodcastButton@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		5BE72024177CDEEA007696E2 = {
 			isa = PBXGroup;
 			children = (
@@ -114,14 +135,7 @@
 				5BE72048177CDEEA007696E2 /* ViewController.h */,
 				5BE72049177CDEEA007696E2 /* ViewController.m */,
 				5BE7204B177CDEEA007696E2 /* ViewController.xib */,
-				5BE72059177EB094007696E2 /* PausedPodcastButton.png */,
-				5BE7205A177EB095007696E2 /* PausedPodcastButton@2x.png */,
-				5BE7205B177EB095007696E2 /* PlaybackSliderLine.png */,
-				5BE7205C177EB095007696E2 /* PlaybackSliderLine@2x.png */,
-				5BE7205D177EB095007696E2 /* PlaybackSliderThumb.png */,
-				5BE7205E177EB095007696E2 /* PlaybackSliderThumb@2x.png */,
-				5BE7205F177EB095007696E2 /* PlayPodcastButton.png */,
-				5BE72060177EB095007696E2 /* PlayPodcastButton@2x.png */,
+				5B555AD817930EC600251797 /* Images */,
 				5BE72037177CDEEA007696E2 /* Supporting Files */,
 			);
 			path = EUPlaybackInfoView;
@@ -205,6 +219,8 @@
 				5BE72066177EB095007696E2 /* PlaybackSliderThumb@2x.png in Resources */,
 				5BE72067177EB095007696E2 /* PlayPodcastButton.png in Resources */,
 				5BE72068177EB095007696E2 /* PlayPodcastButton@2x.png in Resources */,
+				5B555AD617930EBA00251797 /* PlaybackBackground.png in Resources */,
+				5B555AD717930EBA00251797 /* PlaybackBackground@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +358,7 @@
 				5BE72052177CDEEA007696E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -31,6 +31,7 @@
     _playbackView = [[EUPlaybackInfoView alloc] init];
     _playbackView.translatesAutoresizingMaskIntoConstraints = NO;
     _playbackView.delegate = self;
+    _playbackView.hidden = YES;
     
     [self setView:_playbackView];
 }
@@ -41,12 +42,6 @@
     [parent.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeBottom     relatedBy:NSLayoutRelationEqual toItem:parent.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
     [parent.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeWidth  relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:self.view.frame.size.width]];
     [parent.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeHeight  relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:self.view.frame.size.height]];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -92,7 +87,34 @@
     return (repeatingTimer && [repeatingTimer isValid]);
 }
 
+- (void)animatePlayViewSlideOut {
+    if (_playbackView.hidden) {
+        CGRect frame = _playbackView.frame;
+        CGRect overshotFrame = frame;
+        frame.origin.y += CGRectGetMaxY(frame);
+        
+        overshotFrame.origin.y -= 10;
+        overshotFrame.size.height += 10;
+        _playbackView.frame = frame;
+        _playbackView.hidden = NO;
+        
+        [UIView animateWithDuration:0.5 animations:^{
+            _playbackView.frame = overshotFrame;
+        } completion:^(BOOL finished) {
+            CGRect reconstructed = _playbackView.frame;
+            
+            reconstructed.origin.y += 10;
+            reconstructed.size.height -= 10;
+            [UIView animateWithDuration:0.1 animations:^{
+                _playbackView.frame = reconstructed;
+            }];
+        }];
+    }
+}
+
 - (void)setPlaying:(BOOL)playing {
+    [self animatePlayViewSlideOut];
+    
     if (!playing) {
         [repeatingTimer invalidate];
         repeatingTimer = nil;

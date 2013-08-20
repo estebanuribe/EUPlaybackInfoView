@@ -19,6 +19,8 @@
     NSTimeInterval totalTime;
     NSTimeInterval remainingTime;
     
+    CGRect          savedFrame;
+    
     NSTimer *repeatingTimer;
 }
 
