@@ -30,7 +30,22 @@
 		5BE72066177EB095007696E2 /* PlaybackSliderThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7205E177EB095007696E2 /* PlaybackSliderThumb@2x.png */; };
 		5BE72067177EB095007696E2 /* PlayPodcastButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7205F177EB095007696E2 /* PlayPodcastButton.png */; };
 		5BE72068177EB095007696E2 /* PlayPodcastButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE72060177EB095007696E2 /* PlayPodcastButton@2x.png */; };
+		ED203260197495FD00420848 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED20325F197495FD00420848 /* XCTest.framework */; };
+		ED203261197495FD00420848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE72032177CDEEA007696E2 /* Foundation.framework */; };
+		ED203262197495FD00420848 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE72030177CDEEA007696E2 /* UIKit.framework */; };
+		ED203268197495FD00420848 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED203266197495FD00420848 /* InfoPlist.strings */; };
+		ED20326A197495FD00420848 /* EUPlaybackInfoView_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED203269197495FD00420848 /* EUPlaybackInfoView_Tests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED20326C197495FD00420848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BE72025177CDEEA007696E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BE7202C177CDEEA007696E2;
+			remoteInfo = EUPlaybackInfoView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B555AD417930EBA00251797 /* PlaybackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaybackBackground.png; sourceTree = SOURCE_ROOT; };
@@ -63,6 +78,12 @@
 		5BE7205E177EB095007696E2 /* PlaybackSliderThumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlaybackSliderThumb@2x.png"; sourceTree = SOURCE_ROOT; };
 		5BE7205F177EB095007696E2 /* PlayPodcastButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayPodcastButton.png; sourceTree = SOURCE_ROOT; };
 		5BE72060177EB095007696E2 /* PlayPodcastButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayPodcastButton@2x.png"; sourceTree = SOURCE_ROOT; };
+		ED20325E197495FD00420848 /* EUPlaybackInfoView Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EUPlaybackInfoView Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED20325F197495FD00420848 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ED203265197495FD00420848 /* EUPlaybackInfoView Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EUPlaybackInfoView Tests-Info.plist"; sourceTree = "<group>"; };
+		ED203267197495FD00420848 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ED203269197495FD00420848 /* EUPlaybackInfoView_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EUPlaybackInfoView_Tests.m; sourceTree = "<group>"; };
+		ED20326B197495FD00420848 /* EUPlaybackInfoView Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EUPlaybackInfoView Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +94,16 @@
 				5BE72031177CDEEA007696E2 /* UIKit.framework in Frameworks */,
 				5BE72033177CDEEA007696E2 /* Foundation.framework in Frameworks */,
 				5BE72035177CDEEA007696E2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED20325B197495FD00420848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED203260197495FD00420848 /* XCTest.framework in Frameworks */,
+				ED203262197495FD00420848 /* UIKit.framework in Frameworks */,
+				ED203261197495FD00420848 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +135,7 @@
 				5BE72056177CDFF4007696E2 /* EUPlaybackInfoView.h */,
 				5BE72057177CDFF4007696E2 /* EUPlaybackInfoView.m */,
 				5BE72036177CDEEA007696E2 /* EUPlaybackInfoView */,
+				ED203263197495FD00420848 /* EUPlaybackInfoView Tests */,
 				5BE7202F177CDEEA007696E2 /* Frameworks */,
 				5BE7202E177CDEEA007696E2 /* Products */,
 			);
@@ -113,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				5BE7202D177CDEEA007696E2 /* EUPlaybackInfoView.app */,
+				ED20325E197495FD00420848 /* EUPlaybackInfoView Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +156,7 @@
 				5BE72030177CDEEA007696E2 /* UIKit.framework */,
 				5BE72032177CDEEA007696E2 /* Foundation.framework */,
 				5BE72034177CDEEA007696E2 /* CoreGraphics.framework */,
+				ED20325F197495FD00420848 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +189,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ED203263197495FD00420848 /* EUPlaybackInfoView Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ED203269197495FD00420848 /* EUPlaybackInfoView_Tests.m */,
+				ED203264197495FD00420848 /* Supporting Files */,
+			);
+			path = "EUPlaybackInfoView Tests";
+			sourceTree = "<group>";
+		};
+		ED203264197495FD00420848 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED203265197495FD00420848 /* EUPlaybackInfoView Tests-Info.plist */,
+				ED203266197495FD00420848 /* InfoPlist.strings */,
+				ED20326B197495FD00420848 /* EUPlaybackInfoView Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +228,24 @@
 			productReference = 5BE7202D177CDEEA007696E2 /* EUPlaybackInfoView.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ED20325D197495FD00420848 /* EUPlaybackInfoView Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED203270197495FD00420848 /* Build configuration list for PBXNativeTarget "EUPlaybackInfoView Tests" */;
+			buildPhases = (
+				ED20325A197495FD00420848 /* Sources */,
+				ED20325B197495FD00420848 /* Frameworks */,
+				ED20325C197495FD00420848 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED20326D197495FD00420848 /* PBXTargetDependency */,
+			);
+			name = "EUPlaybackInfoView Tests";
+			productName = "EUPlaybackInfoView Tests";
+			productReference = ED20325E197495FD00420848 /* EUPlaybackInfoView Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,6 +254,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Esteban Uribe";
+				TargetAttributes = {
+					ED20325D197495FD00420848 = {
+						TestTargetID = 5BE7202C177CDEEA007696E2;
+					};
+				};
 			};
 			buildConfigurationList = 5BE72028177CDEEA007696E2 /* Build configuration list for PBXProject "EUPlaybackInfoView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -197,6 +273,7 @@
 			projectRoot = "";
 			targets = (
 				5BE7202C177CDEEA007696E2 /* EUPlaybackInfoView */,
+				ED20325D197495FD00420848 /* EUPlaybackInfoView Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +301,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED20325C197495FD00420848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED203268197495FD00420848 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -239,7 +324,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED20325A197495FD00420848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED20326A197495FD00420848 /* EUPlaybackInfoView_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED20326D197495FD00420848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BE7202C177CDEEA007696E2 /* EUPlaybackInfoView */;
+			targetProxy = ED20326C197495FD00420848 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5BE72039177CDEEA007696E2 /* InfoPlist.strings */ = {
@@ -256,6 +357,14 @@
 				5BE7204C177CDEEA007696E2 /* en */,
 			);
 			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		ED203266197495FD00420848 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED203267197495FD00420848 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -339,6 +448,67 @@
 			};
 			name = Release;
 		};
+		ED20326E197495FD00420848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EUPlaybackInfoView.app/EUPlaybackInfoView";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUPlaybackInfoView Tests/EUPlaybackInfoView Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "EUPlaybackInfoView Tests/EUPlaybackInfoView Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ED20326F197495FD00420848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EUPlaybackInfoView.app/EUPlaybackInfoView";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUPlaybackInfoView Tests/EUPlaybackInfoView Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "EUPlaybackInfoView Tests/EUPlaybackInfoView Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -359,6 +529,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		ED203270197495FD00420848 /* Build configuration list for PBXNativeTarget "EUPlaybackInfoView Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED20326E197495FD00420848 /* Debug */,
+				ED20326F197495FD00420848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

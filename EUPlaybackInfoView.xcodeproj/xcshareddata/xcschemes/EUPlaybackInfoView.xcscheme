@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ED20325D197495FD00420848"
+               BuildableName = "EUPlaybackInfoView Tests.xctest"
+               BlueprintName = "EUPlaybackInfoView Tests"
+               ReferencedContainer = "container:EUPlaybackInfoView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
