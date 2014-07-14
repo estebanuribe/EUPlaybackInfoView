@@ -37,6 +37,5 @@ typedef enum EUPlaybackState {
 @property (nonatomic, weak) id<EUPlaybackInfoViewDelegate>delegate;
 
 - (void)refresh;
-- (BOOL)shouldUpdate;
 
 @end

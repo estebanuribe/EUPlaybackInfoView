@@ -70,12 +70,12 @@
 @implementation NSString(PRIVATE)
 + (NSString *)timeStringFromNSTimeInterval:(NSTimeInterval)time {
     if (!time) return @"0:00:00";
-    NSUInteger hours = 0, minutes = 0, seconds = 0;
+    NSInteger hours = 0, minutes = 0, seconds = 0;
     hours = time / 60 / 60;
     minutes = time / 60 - hours * 60;
     seconds = time - (hours * 3600) - (minutes * 60);
     
-    return [NSString stringWithFormat:@"%d:%02d:%02d", hours, minutes, seconds];
+    return [NSString stringWithFormat:@"%d:%02d:%02d", (int)hours, (int)minutes, (int)seconds];
 }
 @end
 

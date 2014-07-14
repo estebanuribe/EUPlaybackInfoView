@@ -30,7 +30,6 @@
     [playButton setTitle:@"Play" forState:UIControlStateNormal];
     [playButton addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchDown | UIControlEventTouchUpInside];
     [playButton sizeToFit];
-    CGRect frame = playButton.frame;
     
     [vc.view addSubview:playButton];
     playButton.center = vc.view.center;
